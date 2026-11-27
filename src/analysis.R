@@ -1,6 +1,6 @@
 # Read all csv files from `data`
 csv_files <- list.files(
-  path = file.path("data", "raw"),
+  path = file.path("data", "input"),
   pattern = "*.csv",
   full.names = TRUE
 )
