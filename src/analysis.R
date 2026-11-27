@@ -11,7 +11,7 @@ merged_df <- do.call(rbind, name_surname_dfs)
 
 # Write the merged data frame to a new csv file in `data/output`
 # Create the output directory if it doesn't exist
-write_dir <- file.path("data", "processed")
+write_dir <- file.path("data", "output")
 if (!dir.exists(write_dir)) {
   dir.create(write_dir, recursive = TRUE)
 }
