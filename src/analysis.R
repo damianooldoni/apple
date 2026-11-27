@@ -1,7 +1,7 @@
 # Read all csv files from `data`
 csv_files <- list.files(
   path = file.path("data", "input"),
-  pattern = "*.csv",
+  pattern = "[a-z]{2,}\\.csv$",
   full.names = TRUE
 )
 name_surname_dfs <- lapply(csv_files, read.csv)
